@@ -8,7 +8,7 @@ st.set_page_config(page_title="Blueprint Personality Test", layout="wide")
 # ======================
 @st.cache_data
 def load_personality_data():
-    df = pd.read_csv("hasil_big5_final.csv")
+    df = pd.read_csv("hasil_big5_ringkas.csv")
     return df
 
 data_kepribadian = load_personality_data()
@@ -167,3 +167,4 @@ if st.button("Lihat Hasil"):
 
         st.markdown("### 💡 Saran untuk Hubungan / Pasangan")
         st.write(saran)
+
